@@ -22,6 +22,15 @@ li{
     padding: 10px;
 }
 
+.logo{
+    width: 50px;
+    display: inline-block;
+}
+
+.group-logo{
+    display:flex;
+}
+
 .hero{
     background-color: #B3CACF;
     padding: 0 10%;
