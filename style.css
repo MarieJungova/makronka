@@ -36,8 +36,8 @@ li{
 .hero{
     background-color: #B3CACF;
     padding: 0 10%;
-    padding-bottom: 150px;
-
+    padding-bottom: 200px;
+    position: relative;
 }
 
 h1{
@@ -78,7 +78,6 @@ color: white;
     background-color: #FFFAFA;
     padding: 0 10%;
     padding-top: 200px;
-    
 }
 
 .about_section{
@@ -108,15 +107,19 @@ h2{
 .boxy{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    justify-items: center;
-    position: relative;
-    padding: 0 10%;
+    column-gap: 30px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,-50%);
 }
 
 
-.box img{
-    width: 200px;
+.box{
+    width: 250px;
+}
+
+.boxy img{
+    max-width: 100%;
     border-radius: 10%;
-    position: absolute;
-    top: -100px;
+
 }
