@@ -14,6 +14,13 @@ header {
     color: white;
     font-size: 24px;
 }
+ul a{
+    color:white;
+}
+
+ul a:hover{
+    color: #FEC0C1;
+}
 
 li {
     display: inline-block;
