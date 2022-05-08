@@ -14,17 +14,22 @@ header {
     color: white;
     font-size: 24px;
 }
-ul a{
-    color:white;
+
+ul {
+    padding: 0;
 }
 
-ul a:hover{
+ul a {
+    color: white;
+}
+
+ul a:hover {
     color: #FEC0C1;
 }
 
 li {
     display: inline-block;
-    padding: 10px;
+    padding: 15px;
 }
 
 .title {
@@ -32,7 +37,7 @@ li {
 }
 
 .logo {
-    width: 50px;
+    width: 60px;
     display: inline-block;
 }
 
@@ -76,7 +81,7 @@ h1 {
     color: white;
 }
 
-.button:hover{
+.button:hover {
     background-color: #ebc1c1b7;
 }
 
@@ -88,7 +93,7 @@ h1 {
 .about {
     background-color: #FFFAFA;
     padding: 0 10%;
-    padding-top: 200px;
+    padding-top: 250px;
 }
 
 .about_section {
@@ -160,7 +165,7 @@ h2 {
 
 .services {
     background-color: #FFFAFA;
-    padding: 30px 10%;
+    padding: 60px 10%;
 }
 
 .services_section {
@@ -176,7 +181,7 @@ h2 {
 
 .tasting {
     background-color: #B3CACF;
-    padding: 40px 10%;
+    padding: 60px 10%;
     display: grid;
     grid-template-columns: 1fr 0.5fr;
     column-gap: 40px;
@@ -191,7 +196,7 @@ h2 {
 
 .contact {
     background-color: #FFFAFA;
-    padding: 30px 10%;
+    padding: 60px 10%;
 
 }
 
@@ -212,7 +217,7 @@ h2 {
 
 .subscribe {
     background-color: #B3CACF;
-    padding: 40px 10%;
+    padding: 60px 10%;
     text-align: center;
 }
 
@@ -235,3 +240,83 @@ footer a {
     text-decoration: none;
     color: #3B3B3B;
 }
+
+@media screen and (max-width: 860px) {
+    header {
+        flex-direction: column;
+    }
+
+    ul {
+        font-size: 18px;
+    }
+
+    h1 {
+        font-size: 26px;
+    }
+
+    .hero_box {
+        grid-template-columns: 1fr;
+    }
+
+    .button_box {
+        justify-self: center;
+    }
+
+
+    .box {
+        width: 120px;
+        height: auto;
+    }
+
+    .box_text{
+        display: none;
+    }
+
+    .hero {
+        padding-bottom: 130px;
+
+    }
+
+    .about {
+        padding-top: 90px;
+    }
+
+    .about_section {
+        grid-template-columns: 1fr;
+    }
+
+    .about img {
+        display: none;
+    }
+
+    .services_section {
+        grid-template-columns: 1fr;
+    }
+    .services img{
+        display: none;
+    }
+
+    .tasting{
+        grid-template-columns: 1fr;
+
+    }
+
+    .contact_section{
+        align-items: center;
+    }
+
+    .mail{
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .box {
+        width: 90px;
+        height: auto;
+    }
+
+    .box_text{
+        display: none;
+    }
+    }
